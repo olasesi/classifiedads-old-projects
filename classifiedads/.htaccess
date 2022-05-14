@@ -1,0 +1,26 @@
+
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+#######################################################
+#RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+#RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+#######################################################
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /index.php?/$1 [L]
+#######################################################
+</IfModule>
+
+
+ErrorDocument 404 /errors/file-not-found.php
+ErrorDocument 400 /errors/bad-request.php
+ErrorDocument 403 /errors/forbidden.php
+ErrorDocument 401 /errors/unauthorized.php
