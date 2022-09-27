@@ -10,7 +10,7 @@
 		echo '<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">';
 		echo '<span class="label label-danger">ad</span>';
 		echo '<div>';
-			echo '<a href="https://wa.me/message/TUVJYV52C5Q6B1"> <img class="center-block" style="width:250px; height:250px;" src="ad/ad-banner/paidad.jpg" alt="designs by blocks"/></a>';
+			echo '<a href="https://wa.me/message/TUVJYV52C5Q6B1"> <img class="center-block" style="width:230px; height:230px;" src="ad/ad-banner/paidad.jpg" alt="designs by blocks"/></a>';
 		echo '</div>';
 		echo '</div>';
 		
@@ -18,7 +18,7 @@
 		echo '<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">';
 		echo '<span class="label label-danger">ad</span>';
 		echo '<div>';
-			echo '<a href="https://wa.me/message/TUVJYV52C5Q6B1"> <img class="center-block" style="width:250px; height:250px;" src="ad/ad-banner/paidad2.jpg" alt="designs by blocks"/></a>';
+			echo '<a href="https://wa.me/message/TUVJYV52C5Q6B1"> <img class="center-block" style="width:230px; height:230px;" src="ad/ad-banner/paidad2.jpg" alt="designs by blocks"/></a>';
 		echo '</div>';
 		echo '</div>';
 		//}

@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['send_request'])){
 		$headers .= 'X-Priority: 3' . "\r\n";
 		$headers .= 'X-Mailer: PHP/'. phpversion() . "\r\n";
 		
-		mail($bus_email, 'Myshoptwo - Message to '.$brand_name, $body, $headers);		//edit
+		mail($bus_email, $brand_name.' - Message to '.$brand_name, $body, $headers);		//edit
 		$_POST = array();
 		
 	
