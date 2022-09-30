@@ -1101,7 +1101,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `type`, `firstname`, `lastname`, `username`, `brand_username_name`, `password`, `r_email`, `local_area`, `state_local_area`, `address`, `phone1`, `phone2`, `bus_email`, `bus_description`, `headline`, `facebook_link`, `instagram_link`, `twitter_link`, `hash_num`, `active`, `payment`, `forgot_password`, `cookie_sessions`, `time_registered`, `forget_link_expiry`) VALUES
-(1, 'member', 'Ahmed', 'Olusesi', 'myshoptwo', 'Designs by Blocks', '5f4dcc3b5aa765d61d8327deb882cf99', 'ola.sesi@yahoo.com', 'Ikeja', 'Lagos', '7, oremeji street, Dallas plaza, suite E2 Computer Village, ', '08074574512', '09061937121', 'info@pimpers.com.ng', 'Visit us to see all our products and services. They are all of high quality and are affordable. Click now to explore.', '', '', '', '', 'a516a87cfcaef229b342c437fe2b95f7', 1, 1, '', 'e7a9b61c0ba3f5708b7e28626b0f1597', '1632123799', '');
+(1, 'member', 'Ahmed', 'Olusesi', 'myshoptwo', 'Designs by Blocks', '5f4dcc3b5aa765d61d8327deb882cf99', 'test@test.com', 'Ikeja', 'Lagos', '7, oremeji street, Dallas plaza, suite E2 Computer Village, ', '08074574512', '09061937121', 'info@pimpers.com.ng', 'Visit us to see all our products and services. They are all of high quality and are affordable. Click now to explore.', '', '', '', '', 'a516a87cfcaef229b342c437fe2b95f7', 1, 1, '', 'e7a9b61c0ba3f5708b7e28626b0f1597', '1632123799', '');
 
 --
 -- Indexes for dumped tables
