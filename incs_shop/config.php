@@ -1,28 +1,28 @@
 <?php
 $live = false;
-$contact_email = 'admin@myshoptwo.com';
+$contact_email = 'admin@classifiedads.com';
 
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']!='off'){
-	$prot= "https://localhost/";
+	$prot= ""; //https://localhost/
 }else{
-	$prot= "http://localhost/";			//to remove localhost on launch 
+	$prot= "";	//http://localhost/		//to remove localhost on launch 
 	}
 	
 
 	
 	
 define ('BASE_URI', '/path/to/Web/parent/folder/');	//yes if i can access the folder. you should be able to access it if you are on a dedicated server
-define ('BASE_URL', 'www.myshoptwo.com/');			//www.myshoptwo.com/
-define ('BASE_URL_NO_SLASHES', 'www.myshoptwo.com');//www.myshoptwo.com
-define ('BASE_URL_NO_WWW', 'myshoptwo.com');		//myshoptwo.com
-define ('MYSQL', 'www.myshoptwo.com/incs/serv_con.inc.php');
-define ('MYSHOPTWO', $prot.'www.myshoptwo.com');	// http://www.myshoptwo.com
+define ('BASE_URL', '/');			//www.myshoptwo.com/
+define ('BASE_URL_NO_SLASHES', '');//www.myshoptwo.com
+define ('BASE_URL_NO_WWW', '');		//myshoptwo.com
+define ('MYSQL', '/incs/serv_con.inc.php');
+define ('MYSHOPTWO', $prot.'');	// http://www.myshoptwo.com
 define ('REGISTRATION_PRICE', 'a token');			//&#8358;3,500
-define ('CAPITALIZED_NAME', 'Myshoptwo');			//Myshoptwo
+define ('CAPITALIZED_NAME', 'Classifiedads');			//Myshoptwo
 
 
-define ('PAGE_TITLE', "Myshoptwo - Nigeria's best online marketplace");
-define ('PAGE_DESCRIPTION', "Nigeria's best online marketplace to get customers and also best prices and deals on shoes, bags, phones, cars, electronics, pets, books, lands, houses, etc.");
+define ('PAGE_TITLE', "Classifiedad website");
+define ('PAGE_DESCRIPTION', "Classifiedad website to get customers and also best prices and deals on shoes, bags, phones, cars, electronics, pets, books, lands, houses, etc.");
 define ('META_CONTENT', "e-shop, e-commerce, online shop, i need, i want, affordable price, cheap price, discount, original products, to post, to buy, to advertise, goods and services, in nigeria");
 define ('CONTACT_NUMBER', "09061937121");
 define ('AD_CONTACT_NUMBER', "09061937121");
