@@ -15,7 +15,7 @@ if (mysqli_num_rows($results) != 0){
 	 echo '<div class="col-md-4 text-center col-sm-6 col-xs-12">
                         <div>
 						<div class="thumbnail product-box">
-                          <a href="full-details.php?details='.$goods_no.'"><img style="height:150px; width:200px;" src="assets/ItemSlider/images/'.$row['file_name_goods'].'" alt="'.$row['goods_name'].'" /></a>		
+                          <a href="full-details.php?details='.$goods_no.'"><img style="height:200px; width:200px;" src="assets/ItemSlider/images/'.$row['file_name_goods'].'" alt="'.$row['goods_name'].'" /></a>		
                             <div class="caption">
                                 <h4><a href="full-details.php?details='.$goods_no.'">'.$row['goods_name'].'</a></h4>
                                 <p>Price : <strong>&#8358;'.number_format((int)$row['goods_price']).'</strong></p>
