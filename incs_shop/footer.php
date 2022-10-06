@@ -37,14 +37,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['send_request'])){
 		
 		$headers = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		$headers .= 'From: info@myshoptwo.com' . "\r\n";
-		$headers .= 'Reply-To: info@myshoptwo.com' . "\r\n";
-		$headers .= 'Return-Path: info@myshoptwo.com' . "\r\n";
-		$headers .= 'BCC: info@myshoptwo.com' . "\r\n";
+		$headers .= 'From: info@classifiedads.com' . "\r\n";
+		$headers .= 'Reply-To: info@classifiedads.com' . "\r\n";
+		$headers .= 'Return-Path: info@classifiedads.com' . "\r\n";
+		$headers .= 'BCC: info@classifiedads.com' . "\r\n";
 		$headers .= 'X-Priority: 3' . "\r\n";
 		$headers .= 'X-Mailer: PHP/'. phpversion() . "\r\n";
 		
-		mail('info@myshoptwo.com', 'My shop two - Message to My Shop Two', $body, $headers);
+		mail('info@classifiedads.com', 'Classified ads - Message to Classified ads', $body, $headers);
 		$_POST = array();
 		
 	
@@ -97,7 +97,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['send_request'])){
                 <p>
                    <?php echo ADDRESS; ?><br />
                     Call: <?php echo CONTACT_NUMBER; ?><br>
-                    Email: <?php echo "info@myshoptwo.com"; ?><br>
+                    Email: <?php echo "info@classifiedads.com"; ?><br>
                 </p>
 
                
@@ -105,7 +105,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['send_request'])){
             <div class="col-md-4 social-box">
                 <strong>We are Social </strong>
                 <hr>
-                <a href="https://m.facebook.com/My-Shop-Two-102084667817295"><i class="fa fa-facebook-square fa-3x "></i></a>
+                <a href="#"><i class="fa fa-facebook-square fa-3x "></i></a>
                 <!--<a href="#"><i class="fa fa-twitter-square fa-3x "></i></a>-->
 				<p>
                    Follow us on social media. 

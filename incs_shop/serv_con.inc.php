@@ -1,10 +1,10 @@
 <?php
 	//move to outside of the root folder
 	//variables
-	define("Host","us-cdbr-east-06.cleardb.net");	//localhost
-	define("User","bd4351311c725a");	//root
-	define("Password","f93bb13f");//
-	define("Db_Name","heroku_0074a896f4937ca");	//myshoptwo
+	define("Host","us-cdbr-east-06.cleardb.net");	//  localhost
+	define("User","bd4351311c725a");	//  root
+	define("Password","f93bb13f"); //
+	define("Db_Name","heroku_0074a896f4937ca");	//  myshoptwo
 	define("Conn_error","could not connect to server at this time"); // all of the rest below may be defined later
 	define("db_conn_error","<div id='oops'>
 							<h1 id='oops_h1'>Oops!!!</h1>
@@ -28,11 +28,11 @@
 	
 	global $connect;
 	
-	if (get_magic_quotes_gpc())$data = stripslashes($data);
-	return mysqli_real_escape_string (trim ($connect, $data));
+	// if (get_magic_quotes_gpc())$data = stripslashes($data);
+	// return mysqli_real_escape_string (trim ($connect, $data));
 	
 	
-	}
+	 }
 	
 	
 	
@@ -44,15 +44,4 @@
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-?>
+	?>

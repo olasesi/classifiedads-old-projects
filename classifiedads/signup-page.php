@@ -258,7 +258,7 @@ $body = '
 			<h3 class="text-success">Registration Successful!!!</h3>
 			
 			</br>
-			You can now login with your username and password now.
+			Please click the link sent to your inbox to verify your email. If you did not find it, please check your spam mails.
 		
 		
 		
