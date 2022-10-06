@@ -1,13 +1,13 @@
  <div class="col-md-12 end-box ">
 		<span style="margin-right:20px;">
 		
-	   <?php echo '<a href="'.MYSHOPTWO.'/terms-and-conditions.php">Ts & Cs</a> | <a href="'.MYSHOPTWO.'/how-it-works.php">How it works</a> | <a href="'.MYSHOPTWO.'/making-money-on-myshoptwo.php">How to earn</a>';?></span>  <?php echo '<a href="'.MYSHOPTWO.'">WWW.MYSHOPTWO.COM</a>';?> <span style="margin-left:20px;">To advertise:  <?php echo AD_CONTACT_NUMBER; ?> </span>
+	   <?php echo '<a href="'.MYSHOPTWO.'/terms-and-conditions.php">Ts & Cs</a> | <a href="'.MYSHOPTWO.'/how-it-works.php">How it works</a> | <a href="'.MYSHOPTWO.'/making-money-on-myshoptwo.php">How to earn</a>';?></span>  <?php echo '<a href="'.MYSHOPTWO.'">CLASSIFIED ADS</a>';?> <span style="margin-left:20px;">To advertise:  <?php echo AD_CONTACT_NUMBER; ?> </span>
      <br>&copy;
 		<?php
 		$copyyear = 2019;
 		$curyear = date('Y');
 		echo $copyyear. (($copyyear != $curyear)? '-' . $curyear : '');
-		?> All Rights Reserved. |&nbsp;  Made by <a href="https://www.designsbyblocks.com.ng" rel="nofollow" target="_blank">Designs by blocks</a>
+		?> All Rights Reserved. |&nbsp;  Made by <a href="#" rel="nofollow" target="_blank">Classified Ads</a>
 	</div>
     <!-- /.col -->
     <!--Footer end -->

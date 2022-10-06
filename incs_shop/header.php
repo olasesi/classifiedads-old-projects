@@ -39,7 +39,7 @@ include("../incs_shop/search_username.php");
 			//edit end
 		}
 	?>">
-    <meta name="author" content="MyShopTwo">
+    <meta name="author" content="Classifiedads">
 	<!-- i wiiil -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Fontawesome core CSS -->
@@ -71,7 +71,7 @@ include("../incs_shop/search_username.php");
                     <span class="icon-bar"></span>
                 </button>
               <?php echo CHRISTMAS_DECOR2; ?>	<a class="navbar-brand" href="<?php echo MYSHOPTWO; ?>" style="padding-left:10px; padding-right:5px;" title="<?php echo MYSHOPTWO; ?>">
-				<strong> <?php echo 'MYSHOPTWO'; ?> </strong>
+				<strong> <?php echo 'CLASSIFIED ADS'; ?> </strong>
 				</a>
             </div>
 
