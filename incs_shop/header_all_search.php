@@ -52,9 +52,9 @@ include("../incs_shop/search_username.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="<?php echo META_CONTENT;?>"/>
 	<meta name="description" content="<?php
-	echo "Search ".$brand_name." e-shop for the best products and services on Myshoptwo. - ".$bus_descr;
+	echo "Search ".$brand_name." e-shop for the best products and services on Classified ads. - ".$bus_descr;
 	?>">
-    <meta name="author" content="My Shop Two">
+    <meta name="author" content="Classified ads">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Fontawesome core CSS -->

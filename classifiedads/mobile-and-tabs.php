@@ -2,7 +2,7 @@
 require("../incs_shop/config.php");
 require("../incs_shop/serv_con.inc.php");
 include("../incs_shop/cookie_for_most.php");
-$page_title = 'Mobile and Tabs - Myshoptwo';
+$page_title = 'Mobile and Tabs';
 $descript = 'Get the latest phones and tablets at affordable prices. Get extra pay for buying from our e-shop.';
 
 include("../incs_shop/header.php");

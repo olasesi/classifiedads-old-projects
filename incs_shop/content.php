@@ -32,110 +32,16 @@
 
 		if(empty($_SESSION['headline'])){
 		//edit
-		echo 'This is your e-shop/dashboard, and be ready to make money and get customers. If you have a product, please edit "Contact this e-shop" by clicking the top button, and then "edit" so that people can contact your goods or services.<br>';
+		echo 'Welcome to '.$brand_name;
 		}else{
 		echo $_SESSION['headline'];
 		
-		//echo '<br><a href="'.MYSHOPTWO.'/making-money-on-myshoptwo.php"><button type="button" class="btn btn-success">Make money on Myshoptwo</button></a>';
-		}	
-		/*
-		$first_ad = mysqli_query($connect,"SELECT * FROM first_free_ad WHERE username_first_ad = '".$_SESSION['username']."'") or die(db_conn_error);
-		$num_first_ad = mysqli_num_rows($first_ad);
-		if($num_first_ad == 0){
-			mysqli_query($connect, "INSERT INTO first_free_ad (id_first_free_ad, username_first_ad, confirm_first_free_ad) VALUES ('', '".$_SESSION['username']."','0')") or die(db_conn_error);
-		}
-		
-		$if_ad_is_in_table = mysqli_query($connect,"SELECT * FROM first_free_ad, users, lookup_table WHERE username = username_first_ad AND username_first_ad = lookup_username AND payment_status = '0' AND active = '1' AND username_first_ad = '".$_SESSION['username']."' AND confirm_first_free_ad = '0'") or die(db_conn_error);
-		$num_if_ad_is_in_table = mysqli_num_rows($if_ad_is_in_table);		//This is if the person is not premium and definitely has to pay for an ad. The ad will make the user a premium member but no more free ad.
-		if($num_if_ad_is_in_table == 1){
-			echo '<br><small><em>You can do a &#8358;3,000 ad with us and be a premium member that earns thousands. Thousands will see your ad for 1 month. Whatsapp 09061937121 to get the details.</em></small>';
-		}else{
-		$if_ad_is_in_table2 = mysqli_query($connect,"SELECT * FROM first_free_ad, users, lookup_table WHERE username = username_first_ad AND username_first_ad = lookup_username AND payment_status = '1' AND active = '1' AND username_first_ad = '".$_SESSION['username']."' AND confirm_first_free_ad = '0'") or die(db_conn_error);
-		$num_if_ad_is_in_table2 = mysqli_num_rows($if_ad_is_in_table2);
-		if($num_if_ad_is_in_table2 == 1){
-			echo '<br><small><em>You have a month free ad. Whatsapp 09061937121 to claim it.</em></small>';
 		}	
 		
-		
-		}
-		
-		
-		
-		$bring_all_cash = array();
-		if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['withdraw_button'])){
-
-		$query_bring_all_cash = mysqli_query($connect, "SELECT ref_total_cash FROM referral WHERE ref_username = '".$_SESSION['username']."'") or die(db_conn_error); 
-		 while($whiling_query_bring_all_cash = mysqli_fetch_array($query_bring_all_cash)){
-			 
-		$bring_all_cash[] = $whiling_query_bring_all_cash['ref_total_cash'];
-		 }
-		 $sum_bring_all_cash = array_sum($bring_all_cash);
-		
-		mysqli_query($connect, "UPDATE referral SET ref_total_cash = '0' WHERE ref_username = '".$_SESSION['username']."'") or die(db_conn_error);
-		$selecting_cash_from_lookup = mysqli_query($connect, "SELECT total_cash_to_withdraw FROM lookup_table WHERE lookup_username = '".$_SESSION['username']."' AND payment_status = '1'") or die(db_conn_error);
-		$one_selecting_cash_from_lookup = mysqli_fetch_array($selecting_cash_from_lookup);
-		
-		$all_total_from_everywhere = $sum_bring_all_cash + $one_selecting_cash_from_lookup['total_cash_to_withdraw'];
-		
-		mysqli_query($connect, "UPDATE lookup_table SET total_cash_to_withdraw = '".$all_total_from_everywhere."' WHERE lookup_username = '".$_SESSION['username']."' AND payment_status = '1'") or die(db_conn_error);
-		
-		//echo '<p class="text-default">Withdrawal was successful. You will get alert soon. (Main fee: &#8358;'.$all_total_from_everywhere.' + Bonus fee: &#8358;)</p>';
-		
-		}
-		
-		$if_referral_exist = mysqli_query($connect,"SELECT * FROM lookup_table WHERE lookup_username = '".$_SESSION['username']."' AND payment_status = '1'") or die(db_conn_error);
-		$confirm_rows_referrals = mysqli_num_rows($if_referral_exist);
-		if($confirm_rows_referrals == 1){
-		
-		$listing_in_array = array();
-		$query_cash_from_refs = mysqli_query($connect, "SELECT ref_total_cash FROM referral WHERE ref_username = '".$_SESSION['username']."'") or die(db_conn_error); 
-		 while($whiling_cash_from_refs = mysqli_fetch_array($query_cash_from_refs)){
-			 
-		 $listing_in_array[] = $whiling_cash_from_refs['ref_total_cash'];
-		 }
-		 $total_amount_referral = array_sum($listing_in_array);
-		 echo '<hr>';
-		
-		
-		
-		echo '<small>My referral link:<br><input class="form-control" style="cursor:text;" id="myInput" value="'.MYSHOPTWO.'/signup-page.php?ref='.$_SESSION['username'].'" type="text" readonly></small><br>';
-		
-		
-		echo '<span class="label label-danger">Total earnings: &#8358;'.$total_amount_referral.'</span><br>';	
-		
-		echo '<a href="'.MYSHOPTWO.'/making-money-on-myshoptwo.php"><button type="button" class="btn btn-success">Edit account details</button></a>';	
-				
-		if($total_amount_referral >= 1000){	
-			 echo '<div class="btn-group">
-			 <div class="btn-group"> 
-				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Earnings withdrawal <span class="caret"></span> </button> 
-				<ul class="dropdown-menu"> 
-				<li>
-				<a>
-				<form action="" method="POST">
-				<input type="hidden" name="" value="" />
-				<button type="submit" name="withdraw_button">Withdraw earnings now?</button>
-				</form>
-				</a>
-				</li>
-				</ul> 
-				</div>
-				</div>
-			 ';
-						
-				
-			
-		}
-		
-		}else{
-		echo '<br><a href="'.MYSHOPTWO.'/making-money-on-myshoptwo.php"><button type="button" class="btn btn-success">Make money on Myshoptwo</button></a>';
-		}
-		*/
 		
 	}else{
 		if(empty($headline)){
-		echo 'Welcome to '.$brand_name.' e-shop. Get the best of our goods and services with great discounts and gifts.<br>
-		';
+		echo 'Welcome to '.$brand_name;
 		}else{
 		echo $headline;
 		}	
@@ -338,7 +244,7 @@
 		   <?php $statement = "goods WHERE UID = '".$user_id."' ORDER BY goods_timestamp DESC"; ?>
 		   <!-- /.col -->
            
-			<div class="col-xs-5 col-sm-8 col-md-9">
+			<div class=" col-sm-8 col-md-9">
                 <div>
                     <ol class="breadcrumb">
                         

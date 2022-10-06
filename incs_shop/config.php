@@ -16,7 +16,7 @@ define ('BASE_URL', '/');			//www.myshoptwo.com/
 define ('BASE_URL_NO_SLASHES', '');//www.myshoptwo.com
 define ('BASE_URL_NO_WWW', '');		//myshoptwo.com
 define ('MYSQL', '/incs/serv_con.inc.php');
-define ('MYSHOPTWO', $prot.'');	// http://www.myshoptwo.com
+define ('MYSHOPTWO', $prot.'http://classified-advert.herokuapp.com');	//   http://localhost/classifiedads/classifiedads
 define ('REGISTRATION_PRICE', 'a token');			//&#8358;3,500
 define ('CAPITALIZED_NAME', 'Classifiedads');			//Myshoptwo
 
