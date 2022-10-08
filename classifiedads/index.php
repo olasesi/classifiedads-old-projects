@@ -169,7 +169,7 @@ include("../incs_shop/header.php");
 
 
 			<div class="row">
-				<?php //echo pagination($statement,$per_page,$page,$url=MYSHOPTWO."/?"); 
+				<?php echo pagination($statement,$per_page,$page,$url=MYSHOPTWO."/?"); 
 				?>
 			</div>
 			<!-- /.row -->
